@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"farms/internal/server"
+)
 
 func main() {
-	fmt.Println("Hello")
+	srv := server.NewServer("8080")
+	srv.Run()
 }
